@@ -8,11 +8,9 @@
 %
 % You should have received a copy of the license along with this
 % work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
-\documentclass{book}
-\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\documentclass[ebook,12pt,openany]{memoir}
 \usepackage[latin1]{inputenc}
 \usepackage{setspace}
-\usepackage{fancyhdr}
 \usepackage{tocloft}
 \usepackage{graphicx}
 
@@ -42,24 +40,6 @@ his Seeing Nature and Upward Spiral work, and to Life itself for giving rise to
 so many wonderful possibilities.}
 \newpage
 
-
-
-% General definitions for all Chapters
-%-------------------------------------------------------------------------------
-
-% Define Page style for all chapters
-\pagestyle{fancy}
-% Delete the current section for header and footer
-\fancyhf{}
-% Set custom header
-\lhead[]{\thepage}
-\rhead[\thepage]{}
-
-% Set arabic (1,2,3...) page numbering
-\pagenumbering{arabic}
-
-% Set double spacing for the text
-\doublespacing
 
 
 
@@ -550,7 +530,6 @@ Borrowing a metaphor from Erwin Ramsdell Goodenough:
 %-------------------------------------------------------------------------------
 \newpage
 % Include dots between chapter name and page number
-\renewcommand{\cftchapdotsep}{\cftdotsep}
 %Finally, include the ToC
 \tableofcontents
 
