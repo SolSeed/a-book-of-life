@@ -23,23 +23,18 @@
 \begin{document}
 
 
-\pagestyle{empty}
 %\pagenumbering{}
 % Set book title
 \title{\textbf{A Book of Life}}
 % Include Author name and Copyright holder name
-\author{The Contributing Members of The SolSeed Movement}
-
-
-
-% 1st page for the Title
-%-------------------------------------------------------------------------------
+\author{The Contributing Members of The }
+\begin{titlingpage}
 \maketitle
+\end{titlingpage}
 
 
 % 2nd page, thanks message
 %-------------------------------------------------------------------------------
-\thispagestyle{empty}
 \thanks{Thanks to Octavia Butler for the Earthseed books, to Paul Krafel for
 his Seeing Nature and Upward Spiral work, and to Life itself for giving rise to
 so many wonderful possibilities.}
@@ -47,9 +42,11 @@ so many wonderful possibilities.}
 
 
 
-
+\pagestyle{plain}
 % Not enumerated chapter
 %-------------------------------------------------------------------------------
+\pagenumbering{Roman}
+
 \chapter*{Preface}
 
 \section*{Happy in the sun}
@@ -138,11 +135,11 @@ Brandon CS Sanders, February 2012
 %  number in the empty page
 \newpage
 \thispagestyle{empty}
-
-
-
-\thispagestyle{empty}
+\pagenumbering{arabic}
 \part{A Vision for Life}
+
+\newpage
+\pagestyle{plain}
 
 % First enumerated chapter
 %-------------------------------------------------------------------------------
