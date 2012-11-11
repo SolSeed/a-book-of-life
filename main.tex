@@ -9,11 +9,13 @@
 % You should have received a copy of the license along with this
 % work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
 % \documentclass[printer,12pt,openany]{memoir}
-\documentclass[ebook,11pt,openany,twoside,draft,showtrims]{memoir}
+% \documentclass[ebook,11pt,openany,twoside,draft,showtrims]{memoir}
+\documentclass[ebook,11pt,openany,twoside,showtrims]{memoir}
 \usepackage[latin1]{inputenc}
 \usepackage{setspace}
 \usepackage{tocloft}
 \usepackage{graphicx}
+\usepackage{eso-pic}
 
 \setlength\stockheight {9.25in}% \stockheight=9.25in
 \setlength\stockwidth  {6.25in}% \stockwidth=6.25in
@@ -168,10 +170,16 @@ originally came from our sun.
 Ants carrying, eagles soaring, people loving \ldots none of these would exist
 without Life's awesome capacity for organizing matter.
 
-\section*{Worthy, but not perfect}
-
+\clearpage \null
+\clearpage \null
+\AddToShipoutPictureBG*{% Add picture to current page
+  \AtStockLowerLeft{% Add picture to lower-left corner of paper stock
+    \includegraphics[keepaspectratio=true, height=\stockheight]{images/WhatIsWorthy-cropped}
+  }
+}
+\clearpage
 % [[Image:WhatIsWorthy.jpg|400px]]
-\includegraphics[keepaspectratio=true, width=300px]{images/WhatIsWorthy}
+\section*{Worthy, but not perfect}
 
 Life is not perfect. This is obvious to anyone who has experienced cruelty or
 misfortune. And yet, Life is the only game in town. Without Life the Earth
