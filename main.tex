@@ -24,6 +24,19 @@
 \setlength\trimtop     {.125in}
 \setlength\trimedge    {.125in}
 
+\newcommand{\imagefacingchapter}[1]{
+  \cleartoverso
+  \clearpage \null
+  \thispagestyle{cleared}
+  \AddToShipoutPictureBG*{% Add picture to current page
+    \AtStockLowerLeft{% Add picture to lower-left corner of paper stock
+      \includegraphics[keepaspectratio=true, height=\stockheight]{#1}
+    }
+  }
+  \clearpage
+}
+
+
 \begin{document}
 
 
